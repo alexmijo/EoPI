@@ -57,7 +57,7 @@ vector<T> mergeSortedSequences(const vector<vector<T>>& sortedSequences) {
         merged.emplace_back(*(smallestLeft.iterator));
         smallestLeft.iterator++;
         if (smallestLeft.iterator != smallestLeft.end) {
-            smallestLeftFromEachSequence.emplace(smallestLeft);
+            smallestLeftFromEachSequence.emplace(move(smallestLeft));
         }
     }
     return merged;
