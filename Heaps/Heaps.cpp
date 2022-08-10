@@ -21,6 +21,12 @@ void printVector(const vector<T>& vector, const string& separator=" ") {
 //  to judge.
 // OK after thinking about it more, I did bad, but only due to lack of C++ knowledge.
 // It seems like they just always use emplace instead of push, so I will too.
+// I also think their code has a bug (iterating after checking if at end instead of before).
+// I also don't understand why they say that the space complexity for the mergesort method is worse
+//  than that of the MinHeap method. Couldn't mergesort be done in place in the file, in which case
+//  the space complexity is actually better than for the MinHeap version? That would make it more
+//  complicated though. I think a lot of the confusion might stem from them not actually doing the
+//  file version of the problem like they said.
 template<typename T>
 struct VectorIteratorForMinHeap {
     typename vector<T>::const_iterator iterator;
