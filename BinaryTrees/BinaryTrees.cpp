@@ -10,13 +10,16 @@ struct BinaryTreeNode {
 };
 
 // 10.1
-// I got the best solution. Took too long just cause I wasn't going fast and was looking up stuff,
-//  but I would've been fine time-wise in an actual interview.
+// I got the best solution (edit: not really, see below). Took too long just cause I wasn't going
+//  fast and was looking up stuff, but I would've been fine time-wise in an actual interview.
 // My code was very similar to theirs (and I had thought of the whole -1 thing too, but decided
 //  against it, and I don't think that was a terrible decision). Theirs was a little nicer mainly
 //  because of that, but also because they used tie(). Since I wanna have some tie() usage to look
 //  back at, I copied treeIsBalancedAndHeight() to treeIsBalancedAndHeight2() and then made it use
 //  tie() instead there.
+// Actually, there was one optimization they thought of that I didn't, which would probably
+//  actually make a quite significant difference in practice. They terminated as soon as the first
+//  unbalanced tree was found (or at least, I should've). I shoulda thought of that.
 // The bugs in my code weren't really a big deal (in an interview) IMO although they were minda hard
 //  to debug.
 template <typename T>
