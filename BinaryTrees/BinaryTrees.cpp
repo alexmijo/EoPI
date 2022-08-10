@@ -20,7 +20,7 @@ struct BinaryTreeNode {
 // Actually, there was one optimization they thought of that I didn't, which would probably
 //  actually make a quite significant difference in practice. They terminated as soon as the first
 //  unbalanced tree was found (or at least, I should've). I shoulda thought of that.
-// The bugs in my code weren't really a big deal (in an interview) IMO although they were minda hard
+// The bugs in my code weren't really a big deal (in an interview) IMO although they were kinda hard
 //  to debug.
 template <typename T>
 bool treeIsBalanced(const unique_ptr<BinaryTreeNode<T>>& tree) {
