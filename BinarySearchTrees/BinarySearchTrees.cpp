@@ -21,6 +21,10 @@ struct BSTNode {
 //  return values.
 // I should at least feel good about coming up with one of their two good algorithms though (even
 //  though that part wasn't particularly hard).
+// Edit: Actually, I didn't come up with their best algorithm, although I'm not convinced it's
+//  really better, since on some types of inputs it's slower and on some it's faster. OK actually
+//  I don't really think they were saying it's strictly better (is also takes O(n) worst case extra
+//  space as well), just showing how to make it BFS, which does have some advantages.
 template <typename T>
 struct IsBSTAndRange {
     bool isBST;
