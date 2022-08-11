@@ -27,6 +27,8 @@ void printVector(const vector<T>& vector, const string& separator=" ") {
 //  the space complexity is actually better than for the MinHeap version? That would make it more
 //  complicated though. I think a lot of the confusion might stem from them not actually doing the
 //  file version of the problem like they said.
+// Edit: OMG I'm dumb, ignore the above where I said mergesort can be done in place (it can't,
+//  regardless of whether it's in a file or an array or whereever. Unless it's in a linked list).
 template<typename T>
 struct VectorIteratorForMinHeap {
     typename vector<T>::const_iterator iterator;
